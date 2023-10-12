@@ -2,8 +2,12 @@
 - Create react App
 - Configured tail wind css
 - Header
+- Routing
 - Login Form
 - Sign Up Form
+- Form validation
+- useRef
+
 # Features
 - Login/Sing Up
     - Login/Sign UP

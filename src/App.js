@@ -1,9 +1,21 @@
-import './App.css';
 
+import Login from "./components/Login";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import Browse from "./components/Browse";
 function App() {
+  const appRouter = createBrowserRouter([
+    {
+      path :"/",
+      element : <Login/>,
+    },
+    {
+      path :"/browse",
+      element : <Browse/>,
+    },
+  ])
   return (
-    <div className="App text-xl font-bold text-green-400">
-     HELLO world
+    <div>
+      <RouterProvider router={appRouter}/>
     </div> 
   );
 }

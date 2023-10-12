@@ -1,20 +1,23 @@
 # Netflix GPT
-    -Create react App
-    -Configured tail wind css
-
+- Create react App
+- Configured tail wind css
+- Header
+- Login Form
+- Sign Up Form
 # Features
- -Login/Sign UP
-    -Sign in/Sign UP Form
-    -redirect to Browse Page
+- Login/Sing Up
+    - Login/Sign UP
+    - Sign in/Sign UP Form
+    - redirect to Browse Page
 
--Browse(After Authentication)
-    -Header
-    -Main Movie
-        -Tailer in Background
-        -Title & Description
-        -Movie Suggestion
-            -MovieLists * N
+- Browse(After Authentication)
+    - Header
+    - Main Movie
+        - Tailer in Background
+        - Title & Description
+        - Movie Suggestion
+            - MovieLists * N
 
--Netflix GPT
-    -Search Bar
-    -Movie Suggestion
+- Netflix GPT
+    - Search Bar
+    - Movie Suggestion

@@ -7,6 +7,15 @@
 - Sign Up Form
 - Form validation
 - useRef
+- set up firebase
+- added authentification
+- Implemented Sign In/Sign Up API 
+- installed npm i -D @redux/toolkit & npm i react-redux
+- Created Redux store with userSlice
+- Implemented Sign Out
+- Adding/Removing users on logging and sign out
+- Redirecting to browser page on Sign In
+- Redirecting to main page on Sign Out
 
 # Features
 - Login/Sing Up

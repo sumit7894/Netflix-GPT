@@ -16,6 +16,9 @@
 - Adding/Removing users on logging and sign out
 - Bug fix : if the user is not logged in redirect /browse to login page and vice versa
 - Unsubscribed to the onAuthStateChanged call back
+- Add hardcoded values to the constant files
+- Registered for TMDB API and create an app to get an access token
+- Get Data form TMDB now playing movies list API
 
 # Features
 - Login/Sing Up

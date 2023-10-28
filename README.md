@@ -14,8 +14,7 @@
 - Created Redux store with userSlice
 - Implemented Sign Out
 - Adding/Removing users on logging and sign out
-- Redirecting to browser page on Sign In
-- Redirecting to main page on Sign Out
+- Bug fix : if the user is not logged in redirect /browse to login page and vice versa
 
 # Features
 - Login/Sing Up

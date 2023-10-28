@@ -9,10 +9,10 @@ import { addUser, removeUser } from '../utils/userSlice';
 const Header = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
-    //Doing this in Use Effect because we want it to trigerred only one time
+    //Doing this in Use Effect beccause we want it to trigerred only one time
     useEffect(()=>{
       //got this fxn from firebase documentation for managing users
-      onAuthStateChanged(auth, (user) => {
+      const unsubscribe = onAuthStateChanged(auth, (user) => {
         if (user) {
           const {uid,email,displayName,photoURL} = user;
           dispatch(addUser({uid:uid, email: email, displayName:displayName,photoURL: photoURL}));
@@ -22,6 +22,8 @@ const Header = () => {
           navigate("/");
         }
       }); 
+      //Unsubsribe when component unmount
+      return() => unsubscribe();
     },[])
   const user = useSelector(store => store.user);
   console.log("user",user);

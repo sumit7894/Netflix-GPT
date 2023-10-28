@@ -15,6 +15,7 @@
 - Implemented Sign Out
 - Adding/Removing users on logging and sign out
 - Bug fix : if the user is not logged in redirect /browse to login page and vice versa
+- Unsubscribed to the onAuthStateChanged call back
 
 # Features
 - Login/Sing Up

@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { addUser, removeUser } from '../utils/userSlice';
 import { LOGO } from '../utils/constants';
-
+import { toggleGptSearchView } from '../utils/gptSlice';
 
 const Header = () => {
   const dispatch = useDispatch();
@@ -34,6 +34,11 @@ const Header = () => {
      navigate("/error");
     });
   };
+  
+  const handleGptSearchClick =()=>{
+    //Toggle GPT Search
+    dispatch(toggleGptSearchView());
+  }
   return (
     <div className="absolute px-8 py-2 w-screen bg-gradient-to-b from-black z-10 flex justify-between">
       <img
@@ -41,7 +46,13 @@ const Header = () => {
       src={LOGO}
       alt="logo">
       </img>
-      {user && (<div className='flex p-8'>
+      {user && (
+      <div className='flex p-8'>
+        <button className='py-2 px-4 mx-4 my-2 bg-purple-800 text-white rounded-lg'
+        onClick={handleGptSearchClick}
+        >
+          Searh gpt
+        </button>
         <img className='w-20'
         alt="userIcon"
         src={user?.photoURL}/>

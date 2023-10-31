@@ -15,7 +15,6 @@ const MainContainer = () => {
     <div>
     <VideoTitle title={original_title} overview={overview} movieId={id}/>
     <VideoBackground movieId={mainMovie.id}/>
-    <SecondaryContainer/>
     </div>
   )
 }
